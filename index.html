@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Gorjetas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main id="mainContent">
+      <div id="header">
+        <h1>Calculadora de Gorjetas</h1>
+      </div>
+      <form>
+        <div id="secondPart">
+          <label for="bill"><p>Qual o valor da conta?</p></label><br />
+          <p>
+            R$
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              placeholder="100"
+              required
+            />
+          </p>
+          <br />
+          <label for="service"><p>Como foi o serviço?</p></label><br />
+          <p>
+            <select name="service" id="service" required>
+              <option disabled selected>Escolha uma opção</option>
+              <option value="amazing">30% - Incrivel</option>
+              <option value="good">20% - Bom</option>
+              <option value="regular">15% - Regular</option>
+              <option value="bad">10% - Ruim</option>
+              <option value="awful">05% - Pessimo</option>
+            </select>
+          </p>
+          <br />
+          <label for="people"
+            ><p>Quantas pessoas vão dividir a conta?</p></label
+          >
+          <br />
+          <p>
+            <input
+              type="number"
+              name="people"
+              id="people"
+              placeholder="3"
+              required
+            />
+            Pessoas
+          </p>
+          <br />
+        </div>
+        <div id="resPart">
+          <button id="button">Calcular</button>
+          <div id="res"></div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

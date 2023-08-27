@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(213, 124, 124);
+  --main-bg-color: rgb(235, 233, 233);
+  --title-bg-color: rgb(219, 219, 219);
+  --letter-color: rgba(0, 0, 0, 0.717);
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--letter-color);
+}
+#mainContent {
+  margin-top: 50px;
+  background-color: var(--main-bg-color);
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.203);
+}
+#header {
+  background-color: var(--title-bg-color);
+  padding: 15px;
+}
+#secondPart {
+  padding: 15px;
+  font-weight: bolder;
+}
+#secondPart input[type="number"] {
+  border: 2px solid black;
+  padding-left: 5px;
+  width: 60px;
+}
+#secondPart select {
+  border: 2px solid black;
+}
+#resPart {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#resPart button {
+  padding: 10px;
+  background-color: var(--bg-color);
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0.8px 0.8px 3px 1px rgba(0, 0, 0, 0.203);
+}
+#res {
+  padding-top: 20px;
+  font-weight: bold;
+  color: var(--letter-color);
+}
