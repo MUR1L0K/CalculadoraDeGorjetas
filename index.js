@@ -30,4 +30,5 @@ document.getElementById("button").addEventListener("click", (ev) => {
   res.innerText = `O valor da gorjeta ficou ${tip.toFixed(
     2
   )} para cada pessoa (${people})`;
+  num = "";
 });
